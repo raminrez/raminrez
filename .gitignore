@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# snipsnap
+snipsnap.code-snippets
