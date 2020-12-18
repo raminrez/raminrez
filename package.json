@@ -23,6 +23,11 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
+  "babel": {
+    "presets": [
+      "next/babel"
+    ]
+  },
   "dependencies": {
     "next": "10.0.0",
     "react": "17.0.1",
