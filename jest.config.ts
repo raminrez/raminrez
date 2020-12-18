@@ -14,9 +14,11 @@ const config: Config.InitialOptions = {
   ],
   moduleNameMapper: {
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
-    '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test/__mocks__/fileMock.js',
+    '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/__mocks__/fileMock.js',
+    'test-utils': '<rootDir>/src/utils/testUtils.ts',
   },
-  moduleDirectories: ['node_modules', 'src'],
+  setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
+  moduleDirectories: ['node_modules', 'src', __dirname],
 }
 
 export default config
