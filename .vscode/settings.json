@@ -1,9 +1,10 @@
 {
-    "cSpell.words": [
-        "Chakra",
-        "commitlint",
-        "raminrez",
-        "testname",
-        "typeahead"
-    ]
+  "cSpell.words": [
+    "Chakra",
+    "Serializers",
+    "commitlint",
+    "raminrez",
+    "testname",
+    "typeahead"
+  ]
 }

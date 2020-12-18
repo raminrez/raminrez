@@ -19,6 +19,7 @@ const config: Config.InitialOptions = {
   },
   setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
   moduleDirectories: ['node_modules', 'src', __dirname],
+  snapshotSerializers: ['@emotion/jest/serializer'],
 }
 
 export default config
