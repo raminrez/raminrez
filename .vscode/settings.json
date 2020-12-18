@@ -3,6 +3,7 @@
     "Chakra",
     "Serializers",
     "commitlint",
+    "prebuild",
     "raminrez",
     "stylelint",
     "testname",
