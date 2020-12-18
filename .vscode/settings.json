@@ -4,6 +4,7 @@
     "Serializers",
     "commitlint",
     "raminrez",
+    "stylelint",
     "testname",
     "typeahead"
   ]
