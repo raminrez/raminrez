@@ -1,7 +1,7 @@
 module.exports = {
   '*': 'pretty-quick  --staged',
-  '**/*.ts?(x)': () => 'yarn type-check',
-  '**/*.(ts|js)?(x)': (filenames) => {
+  '**/*.(ts|md)?(x)': () => 'yarn type-check',
+  '**/*.(ts|js|md)?(x)': (filenames) => {
     const files = filenames.join(' ')
     return [`yarn lint ${files} `, ` yarn stylelint ${files}`]
   },
