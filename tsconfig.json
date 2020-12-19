@@ -20,5 +20,5 @@
     "typeRoots": ["node_modules/@types", "types"]
   },
   "exclude": ["node_modules", ".next", "out", "__mocks__"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.mdx", "**/*.js"]
 }
