@@ -15,7 +15,7 @@
     "jsx": "preserve",
     "baseUrl": "src",
     "paths": {
-      "test-utils": ["./utils/testUtils.ts"]
+      "test-utils": ["./utils/testUtils.tsx"]
     }
   },
   "exclude": ["node_modules", ".next", "out"],
