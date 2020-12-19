@@ -16,8 +16,9 @@
     "baseUrl": "src",
     "paths": {
       "test-utils": ["./utils/testUtils.tsx"]
-    }
+    },
+    "typeRoots": ["node_modules/@types", "types"]
   },
-  "exclude": ["node_modules", ".next", "out"],
+  "exclude": ["node_modules", ".next", "out", "__mocks__"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"]
 }
