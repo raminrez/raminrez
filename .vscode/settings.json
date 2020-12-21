@@ -8,5 +8,8 @@
     "stylelint",
     "testname",
     "typeahead"
-  ]
+  ],
+  "files.exclude": {
+    "**/.gitsecret": true
+  }
 }
