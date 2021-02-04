@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, axe } from 'test-utils'
-import Home from 'pages/index'
+import Home from 'src/pages/index'
 
 describe('Home page', () => {
   it('clicking button triggers alert', async () => {

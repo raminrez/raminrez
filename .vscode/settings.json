@@ -3,6 +3,8 @@
     "Chakra",
     "Serializers",
     "commitlint",
+    "gtag",
+    "pageview",
     "prebuild",
     "raminrez",
     "stylelint",

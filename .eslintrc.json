@@ -1,8 +1,13 @@
 {
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "project": "./tsconfig.json"
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
   },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": { "ecmaVersion": 8 },
+  "settings": { "react": { "version": "detect" } },
   "plugins": [
     "@typescript-eslint",
     "jest",
@@ -23,12 +28,6 @@
     "plugin:jest-formatting/recommended",
     "plugin:mdx/recommended"
   ],
-  "env": {
-    "es6": true,
-    "browser": true,
-    "jest": true,
-    "node": true
-  },
   "rules": {
     "@typescript-eslint/ban-ts-comment": [
       "error",

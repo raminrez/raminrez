@@ -13,9 +13,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "test-utils": ["./utils/testUtils.tsx"]
+      "test-utils": ["src/utils/testUtils.tsx"]
     },
     "typeRoots": ["node_modules/@types", "types"]
   },
