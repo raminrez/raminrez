@@ -1,20 +1,33 @@
 {
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "@emotion"],
+  "parserOptions": { "ecmaVersion": 8 },
+  "settings": { "react": { "version": "detect" } },
+  "plugins": [
+    "@typescript-eslint",
+    "jest",
+    "@emotion",
+    "testing-library",
+    "jest-formatting"
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:testing-library/react",
+    "plugin:testing-library/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
-    "prettier/@typescript-eslint"
+    "prettier/@typescript-eslint",
+    "plugin:jest/recommended",
+    "plugin:jest-formatting/recommended",
+    "plugin:mdx/recommended"
   ],
-  "env": {
-    "es6": true,
-    "browser": true,
-    "jest": true,
-    "node": true
-  },
   "rules": {
     "@typescript-eslint/ban-ts-comment": [
       "error",

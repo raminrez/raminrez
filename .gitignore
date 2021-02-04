@@ -35,3 +35,7 @@ yarn-error.log*
 
 # snipsnap
 snipsnap.code-snippets
+
+# gitsecret
+.gitsecret/keys/random_seed
+!*.secret

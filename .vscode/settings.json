@@ -3,10 +3,15 @@
     "Chakra",
     "Serializers",
     "commitlint",
+    "gtag",
+    "pageview",
     "prebuild",
     "raminrez",
     "stylelint",
     "testname",
     "typeahead"
-  ]
+  ],
+  "files.exclude": {
+    "**/.gitsecret": true
+  }
 }

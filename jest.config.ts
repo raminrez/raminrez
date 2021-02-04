@@ -15,9 +15,13 @@ const config: Config.InitialOptions = {
   moduleNameMapper: {
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
     '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/__mocks__/fileMock.js',
-    'test-utils': '<rootDir>/src/utils/testUtils.ts',
+    'test-utils': '<rootDir>/src/utils/testUtils.tsx',
   },
-  setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
+  setupFiles: ['jest-canvas-mock'],
+  setupFilesAfterEnv: [
+    '@testing-library/jest-dom/extend-expect',
+    'jest-axe/extend-expect',
+  ],
   moduleDirectories: ['node_modules', 'src', __dirname],
   snapshotSerializers: ['@emotion/jest/serializer'],
 }
