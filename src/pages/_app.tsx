@@ -1,7 +1,26 @@
 import { AppProps, NextWebVitalsMetric } from 'next/app'
 import { Box, ChakraProvider } from '@chakra-ui/react'
+import { useRouter } from 'next/dist/client/router'
+import { useEffect } from 'react'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
+  const router = useRouter()
+
+  useEffect(() => {
+    if (process.env.NODE_ENV !== 'production') {
+      return
+    }
+
+    const handleRouteChange = (url: URL) => {
+      console.log('🎃 ~ handleRouteChange ~ url', url)
+      window.gtag.pageview(url)
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
+
   return (
     <ChakraProvider>
       <Box bg="blue.900" h="full">
