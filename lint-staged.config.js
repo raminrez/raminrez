@@ -3,6 +3,6 @@ module.exports = {
   '**/*.(ts|md)?(x)': () => 'yarn type-check',
   '**/*.(ts|js|md)?(x)': (filenames) => {
     const files = filenames.join(' ')
-    return [`yarn lint ${files} `, ` yarn stylelint ${files}`]
+    return [`yarn lint ${files}`]
   },
 }

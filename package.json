@@ -20,20 +20,22 @@
     "lint": "eslint --ext js,jsx,ts,tsx --fix"
   },
   "dependencies": {
+    "@headlessui/react": "^1.0.0",
+    "@heroicons/react": "^1.0.1",
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.0.3",
-    "next": "10.0.0",
+    "next": "latest",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
   "devDependencies": {
-    "@chakra-ui/react": "^1.0.4",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@emotion/eslint-plugin": "^11.0.0",
     "@emotion/jest": "^11.1.0",
     "@emotion/react": "^11.1.2",
     "@emotion/styled": "^11.0.0",
+    "@tailwindcss/forms": "^0.3.2",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@types/jest": "^26.0.19",
@@ -42,6 +44,7 @@
     "@types/react": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "^4.10.0",
     "@typescript-eslint/parser": "^4.10.0",
+    "autoprefixer": "^10.2.5",
     "babel-jest": "^26.6.3",
     "eslint": "^7.15.0",
     "eslint-config-prettier": "^7.0.0",
@@ -62,10 +65,10 @@
     "jest-watch-typeahead": "^0.6.1",
     "lint-staged": "^10.5.3",
     "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.10",
     "prettier": "^2.2.1",
     "pretty-quick": "^3.1.0",
-    "stylelint": "^13.8.0",
-    "stylelint-config-standard": "^20.0.0",
+    "tailwindcss": "^2.1.1",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
   }
